@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Dosis', sans-serif;
+    background-color: aliceblue;
+}
+
+/* About Me Style */
+.section{
+    width: 100%;
+}
+
+.section .container{
+    width: 70%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.container .title{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container .title h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #6b305a;
+   
+}
+
+.container .title h1::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #6b305a;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.content{
+    float: left;
+    width: 600px;
+    margin-top: 50px;
+}
+.img-section{
+    float: right;
+    width: 230px;
+}
+.img-section img{
+    width: 250px;
+    height:auto;
+}
+.content .article h3{
+    color: black;
+    font-size: 25px;
+}
+.content .article p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #864975;
+}
+.content .article .button{
+    margin-top: 50px;
+}
+.content .article .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color:#6b305a;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.content .article .button a:hover{
+    color: #fff;
+    background-color: #864975;
+}
+.container .social {
+    width: 100%;
+    clear: both;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.container .social i{
+    color: #fff;
+    font-size: 22px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    line-height: 45px;
+    text-align: center;
+    background-color:  #6b305a;
+    margin: 0px 5px;
+}
+.container .social i:hover{
+    color: #fff;
+    background-color: #864975;
+    transition: 1s ease;
+    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px){
+    .section .container{
+        width: 88%;
+        display: block;
+        margin: auto;
+    }
+    .content{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .img-section{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .img-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .container .title h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .container.article .button{
+        text-align: center;
+    }
+    .container .article .button a{
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+    .container .social i{
+        font-size: 19px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+}
+
+/* skills Style */
+
+.skills_section{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 13%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    font-size: 40px;
+}
+.skills_head h2 span{
+    color: #794750;
+}
+.skills_head p{
+    font-size: 25px;
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+    font-size: 18px;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgba(1, 1, 1, 0.144);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #6b305a;
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .css{
+    width: 85%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .PHP{
+    width: 60%;
+    animation: PHP 2s;
+}
+@keyframes PHP {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+.skill_bar .bar .js{
+    width: 80%;
+    animation: css 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .cc{
+    width: 85%;
+    animation: cc 2s;
+}
+@keyframes cc {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .c{
+    width: 85%;
+    animation: c 2s;
+}
+@keyframes c {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .Python{
+    width: 90%;
+    animation: Python 2s;
+}
+@keyframes Python {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .Java{
+    width: 80%;
+    animation: Java 2s;
+}
+@keyframes Java {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .SQL{
+    width: 95%;
+    animation: SQL 2s;
+}
+@keyframes SQL {
+    0%{
+        width: 0%;
+    }100%{
+        width: 95%;
+    }
+}
+.skill_bar .bar .AS{
+    width: 70%;
+    animation: AS 2s;
+}
+@keyframes AS {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
+.skill_bar .bar .LINUX{
+    width: 80%;
+    animation: LINUX 2s;
+}
+@keyframes LINUXS {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .Canva{
+    width: 95%;
+    animation: Canva 2s;
+}
+@keyframes Canva {
+    0%{
+        width: 0%;
+    }100%{
+        width:95%;
+    }
+}
+
+/* My Courses Style*/
+#Courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+.Course-heading{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Course-heading h3{
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6b305a;
+}
+.Course-heading span{
+    color: #794750;
+}
+.Course-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #86497573;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.Course-filter li{
+    margin: 10px;
+    padding: 5px 20px;
+    color: #9b9b9b;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+    list-style-type: none;
+}
+.Course-filter-active{
+    background-color: #86497522;
+    color: #272727 !important;
+}
+.Course-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+.Course-box{
+    width:330px;
+    padding: 15px;
+    border: 1px solid #86497521;
+    margin: 20px;
+   
+}
+ 
+.Course-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+ 
+@media(max-width:740px){
+.Course-filter{
+    background-color:#864975;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.Course-filter-active{
+    background-color: #864975;
+    border: 1px solid rgb(219, 219, 219);
+}
+.Course-box{
+    width:80%;
+}
+}
+@media(max-width:550px){
+ 
+    .Course-heading h3
+    {
+        font-size: 1.8rem;
+    }
+}
+
+.footer{
+    padding-top: 100px;
+}
+
