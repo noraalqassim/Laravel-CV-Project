@@ -3,6 +3,10 @@ My CV website, built using Level Framework.
 
 My first project using the Laravel Framework was built in 3 weeks as a requirement for a summer internship.
 
+[Laravel CV Project.zip](https://github.com/user-attachments/files/17354741/Laravel.CV.Project.zip)
+
+
+
 ## Tools Used
 - 🛠️ XAMPP
 - 📦 Composer
